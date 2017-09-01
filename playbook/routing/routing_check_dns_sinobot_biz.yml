@@ -1,0 +1,16 @@
+---
+# This playbook deploys the whole application stack in this site.
+
+- name: apply routing_sinobot.biz  excute the command
+  hosts: all
+  remote_user: root
+  roles:
+    - routing_nslookup
+  tasks: 
+  - name: Command run line 
+    shell: nslookup  sinobot.biz
+    register: result
+  - name: Show debug info
+    debug: var=result verbosity=0
+
+

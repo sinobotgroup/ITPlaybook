@@ -1,0 +1,7 @@
+[webservers]
+172.104.90.190 ansible_sudo_pass='1qaz!2wsx@' ansible_ssh_user=root
+
+[dbservers]
+172.104.90.190 ansible_sudo_pass='1qaz!2wsx@' ansible_ssh_user=root
+
+

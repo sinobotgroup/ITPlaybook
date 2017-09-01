@@ -1,0 +1,5 @@
+---
+# This playbook contains common plays that will be run on all nodes.
+- name: check the interal website and using command traceroute 
+  command: traceroute 124.74.50.1
+

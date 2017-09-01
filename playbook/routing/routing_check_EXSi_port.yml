@@ -1,0 +1,14 @@
+---
+# This playbook deploys the whole application stack in this site.
+
+- name: apply check the  exsi  excute the command
+  hosts: all
+  remote_user: root
+  roles:
+    - routing_check_EXSi_port
+  tasks:
+  - name: Command run line
+    shell: telnet 192.168.96.21 443
+    register: result
+  - name: Show debug info
+    debug: var=result verbosity=0

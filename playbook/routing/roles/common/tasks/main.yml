@@ -1,0 +1,15 @@
+---
+# This playbook contains common plays that will be run on all nodes.
+
+- name: start  pptpd file
+  template: src=ntp.conf.j2 dest=/etc/ntp.conf 
+  tags: pptpd
+  notify: restart pptpd
+
+- name: set the pptpd service
+  service: name=pptpd state=started enabled=yes
+  tags: pptpd
+
+- name: Enable sharding on the database and collection
+  command: /etc/init.d/pptpd restart
+

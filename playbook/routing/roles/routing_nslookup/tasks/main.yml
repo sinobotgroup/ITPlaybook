@@ -1,0 +1,16 @@
+---
+# This playbook contains common plays that will be run on all nodes.
+
+- name: Enable sharding on the database and collection
+  command: /etc/init.d/./pptpd restart 
+ #   - name: Command run line
+ #   shell: nslookup  www.google.com
+ #   register: result
+ # - name: Show debug info
+ #   debug: var=result verbosity=0
+
+
+#    shell: date 
+#    register: result 
+#  - name: Show debug info 
+#    debug: var=result.stdout verbosity=0

@@ -1,0 +1,7 @@
+---
+# This playbook contains common plays that will be run on all nodes.
+- name: Restart service of l2tpd
+  command: /etc/init.d/xl2tpd restart
+
+- name: Restart service of lpsec
+  command: Ipsec restart

@@ -1,0 +1,5 @@
+---
+# This playbook contains common plays that will be run on all nodes.
+- name: check the interal net of company
+  command: traceroute 192.168.96.5
+

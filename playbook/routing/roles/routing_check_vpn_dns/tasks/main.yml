@@ -1,0 +1,11 @@
+---
+# This playbook contains common plays that will be run on all nodes.
+- name: check dns  of google.com
+  command: nslookup  www.google.com 
+
+- name: check dns of youtube.com
+  command: nslookup  www.youtube 
+
+- name: check dns of   facebook.com
+  command: nslookup  www.facebook.com 
+

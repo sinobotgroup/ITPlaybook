@@ -1,0 +1,11 @@
+---
+# This playbook contains common plays that will be run on all nodes.
+- name: check connect to google.com
+  command: ping  www.google.com -c 5 
+
+- name: check connect to youtube.com
+  command: ping  www.youtube -c 5
+
+- name: check connect to  facebook.com
+  command: ping  www.facebook.com -c 5
+
